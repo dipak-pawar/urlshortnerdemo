@@ -9,3 +9,7 @@ Usage Instruction
 5. In response you will get short url in message.
 6. Do a get with localhost:9000/{shorturl}, you will be redirected to original page.
 
+Database
+1. H2 database is used in file mode. A file will be create in your home directory.
+2. To access database console, you can log into localhost:9000/h2
+
