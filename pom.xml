@@ -24,12 +24,9 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -44,8 +41,8 @@
 		</dependency>
 	</dependencies>
 	<build>
-	<pluginManagement>
-		<plugins>
+		<pluginManagement>
+			<plugins>
 				<plugin>
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-maven-plugin</artifactId>

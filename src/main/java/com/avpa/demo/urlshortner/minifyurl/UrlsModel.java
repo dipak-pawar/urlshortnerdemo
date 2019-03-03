@@ -8,6 +8,8 @@ import javax.persistence.Id;
 public class UrlsModel {
 
 	@Id
+	private int id;
+	@Column(unique = true)
 	private String shorturl;
 	@Column(unique = true)
 	private String realurl;
@@ -16,9 +18,18 @@ public class UrlsModel {
 
 	}
 
-	public UrlsModel(String shorturl, String realurl) {
+	public UrlsModel(int id, String shorturl, String realurl) {
+		this.id = id;
 		this.shorturl = shorturl;
 		this.realurl = realurl;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getShorturl() {
